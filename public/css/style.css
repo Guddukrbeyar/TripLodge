@@ -1,0 +1,164 @@
+ body{
+    background-color: rgb(240, 167, 167);
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #ff6f61;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 !important;/*  we use important Override Bootstrap default link color */
+}
+
+footer {
+    background-color: #ebebeb;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Move socials to top */
+.f-info-socials {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Fix link underline */
+.f-info-links a {
+    text-decoration: none;
+    color: #222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: #110200;
+
+}
+
+/* Align bottom content */
+.f-info-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Force equal grid layout */
+.listing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Force all cards same size */
+.listing-card {
+    width: 280px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+listing-card  hover::after{
+    width: 280px;
+    background: rgb(179, 166, 166);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Force all images same size */
+.listing-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Center title & price */
+.listing-details {
+    text-align: center;
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.listing-details h4 {
+    font-size: 16px;
+    margin: 5px 0 2px 0;
+}
+
+.listing-details p {
+    font-weight: bold;
+    color: #ff6f61;
+    margin: 0;
+}
+
+/* .card-img-overlay {
+    opacity: 0.2;
+ 
+}
+.card-img-overlay:hover {
+    opacity: 0.2;
+   background-color: #ebebeb;
+} */
+ .delete {
+    background-color: #da6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+ }
+
+ .payment {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+ }
+ .class edit {
+    background-color: #52aecd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+ }
+ .class back {
+    background-color: #6fd594;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+ }
+
+ .payment-btn {
+  display: inline-block;
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+

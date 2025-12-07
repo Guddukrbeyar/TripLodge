@@ -1,0 +1,29 @@
+<% layout("/layouts/boilerplate") %>
+
+<h3 style="text-align:center; margin-top:20px;">All Listings</h3>
+
+<form action="/listings/new" method="GET" style="text-align:center; margin-bottom:20px;">
+    <button>Create New Listing</button>
+</form>
+
+<div class="listing-container">
+
+  <% for(let listing of listings) { %>
+<a href="/listings/<%= listing._id %>" style="text-decoration: none; color: inherit;">
+
+    <div class="listing-card">
+
+      <!-- IMAGE -->
+      <img src="<%= listing.image.url %>" class="listing-image" alt="listing image">
+        <div class="card-img-overlay"></div>
+      <!-- TITLE & PRICE BELOW IMAGE -->
+      <div class="listing-details">
+        <h4><%= listing.title %></h4>
+        <p>₹ <%= listing.price %></p>
+      </div>
+
+    </div>
+
+  <% } %>
+
+</div>

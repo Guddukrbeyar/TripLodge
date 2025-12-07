@@ -1,0 +1,36 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+
+<h3>Listing Detail</h3>
+
+<ul>
+    <li> Title: <%= listing.title %> </li>
+    <li> Description: <%= listing.description %> </li>
+    <li> ₹ Price: <%= listing.price.toLocaleString("en-IN") %> </li>
+    <li> Location: <%= listing.location %> </li>
+    <li> Country: <%= listing.country %> </li>
+</ul>
+
+<br>
+<form method="POST" action="/listings/<%= listing._id %>?_method=DELETE">
+<button class="delete">
+    <a href="/listings/<%= listing._id %>/delete" onclick="return confirm('Are you sure you want to delete this listing?');">Delete</a>
+</button>
+<br><br>
+</form>
+
+<button class="payment" onclick="window.location.href='/listings/<%= listing._id %>/payment'">
+   Go to Payment
+</button>
+
+<br><br>
+<button class="edit">
+<a href="/listings/<%= listing._id %>/edit">Edit</a>
+</button>
+<br><br>
+<button class="back">
+<a href="/listings">Back</a>
+</button>
+
+</body>
+
